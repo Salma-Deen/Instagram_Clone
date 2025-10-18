@@ -5,7 +5,7 @@ function Posts() {
     useEffect(() => {
         fetch("/data/db.json")
             .then((data) => data.json())
-            .then((data) => setPost(data))
+            .then((data) => setPost(data.posts))
             .catch((err) => console.log(err)
             )
     }, []);
