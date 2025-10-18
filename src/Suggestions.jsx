@@ -8,12 +8,12 @@ function Suggestions() {
   useEffect(() => {
     fetch("/data/db.json")
       .then((data) => data.json())
-      .then((data) => setProfile(data))
+      .then((data) => setProfile(data.profile))
       .catch((err) => console.log(err))
 
     fetch("/data/db.json")
       .then((data) => data.json())
-      .then((data) => setSuggestions(data))
+      .then((data) => setSuggestions(data.suggestions))
       .catch((err) => console.log(err))
 
   }, []);
