@@ -20,7 +20,7 @@ function Stories() {
                 stories.map((story) => (
                     <div key={story.id} className="mx-2" onClick={() => { navigate(`/story/${story.id}/${tot}`) }}>
                         <div className="gradient-border">
-                            <img src={story.user.profilePic.replace("src/", "/")} alt="profilepic" className="story-dp rounded-circle" />
+                            <img src={story.user.profilePic} alt="profilepic" className="story-dp rounded-circle" />
                         </div>
                         <p className="text-truncate mt-3" style={{ width: "60px" }}>{story.user.username}</p>
                     </div>
