@@ -8,7 +8,7 @@ function Sidebar() {
       <div>
         <img
           className="logo-text mt-3 mb-4"
-          src="src/assets/insta_text.png"
+          src="/assets/insta_text.png"
           alt="Instagram Logo"
         />
          <div className="logo-icon mt-3 mb-4">
