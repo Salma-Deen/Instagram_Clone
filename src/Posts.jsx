@@ -20,7 +20,7 @@ function Posts() {
                                     <img className="dpp rounded-circle " src={p.user.profilePic} alt="profilepic" />
 
                                     <h5 className="textpost">{p.user.username}</h5>
-                                </div> <img className="image" src={p.image} alt="post" />
+                                </div> <img className="image" src={p.image.replace("src/", "/")} alt="post" />
                                 <div className="my-2 ">
                                     <i className="bi bi-heart h4 m-2 "></i>
                                     <i className="bi bi-chat h4 m-2"></i>
