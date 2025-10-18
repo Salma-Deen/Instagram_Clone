@@ -1,0 +1,167 @@
+ .w-20 {
+   width: 20%;
+ }
+
+ .w-30 {
+   width: 30%;
+ }
+
+ .sidebar {
+   width: 250px;
+   min-height: 100vh;
+   border-right: 1px solid #dbdbdb;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #fff;
+   transition: width 0.3s ease;
+   position: fixed;
+ }
+
+ .sidebar .logo-text {
+   width: 100px;
+ }
+
+ .menu-item {
+   display: flex;
+   align-items: center;
+   line-height: 50px;
+   cursor: pointer;
+   transition: background-color 0.2s ease;
+   font-size: 14px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ @media(max-width:759px) {
+   .menu-item .text-truncate {
+     width: 10px;
+     overflow: hidden;
+   }
+ }
+
+ .menu-item:hover {
+   background-color: #f2f2f2;
+ }
+
+ .logo-icon {
+   display: none;
+   text-align: center;
+ }
+
+
+ .menu-item i {
+   width: 24px;
+   text-align: center;
+ }
+
+ /* Make it responsive */
+ @media (max-width: 759px) {
+   .sidebar {
+     width: 60px;
+     align-items: center;
+   }
+
+   .sidebar .logo-text {
+     display: none;
+   }
+
+   .menu-item span {
+     display: none;
+     /* hide text */
+   }
+
+   .logo-icon {
+     display: block;
+   }
+
+   .menu-item {
+     justify-content: center;
+     padding: 10px 0;
+
+   }
+ }
+
+ @media (max-width: 1000px) {
+   .suggest {
+     display: none;
+   }
+ }
+
+ .sidebar i {
+   font-size: 18px;
+   margin: 5px 10px;
+   font-weight: 200;
+ }
+
+ .story {
+   height: 150px;
+   padding: 35px;
+ }
+
+ .gradient-border {
+   width: 95px;
+   height: 95px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background: linear-gradient(45deg, #ff00ff, #ff6600, #ffcc00);
+ }
+
+ .story-dp {
+   width: 90px;
+
+ }
+
+ @media (max-width: 1154px) and (min-width: 759px) {
+   .sidebar {
+     width: 20%;
+   }
+
+   .story {
+     width: 80%;
+     text-align: center;
+   }
+
+   .w-30 {
+     width: 0%;
+     display: none;
+
+   }
+ }
+
+ .post {
+   padding-top: 10px;
+
+ }
+
+ .dpp {
+   height: 40px;
+   margin-top: 10px;
+   margin-right: 5px;
+ }
+
+ .textpost {
+   font-size: 20px;
+   margin-top: 12px;
+ }
+
+ .dp {
+   height: 50px;
+   margin-top: 10px;
+   margin-right: 5px;
+ }
+
+ .image {
+   margin-top: 10px;
+   width: 500px;
+ }
+
+ .suggestions {
+   width: 80%;
+ }
+
+ .suggestions h5 {
+   font-size: 16px;
+   margin-top: 18px;
+ }
