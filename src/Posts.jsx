@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function Posts() {
     const [posts, setPost] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3500/posts")
+        fetch("/data/db.json")
             .then((data) => data.json())
             .then((data) => setPost(data))
             .catch((err) => console.log(err)
