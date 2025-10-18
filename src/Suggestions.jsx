@@ -6,12 +6,12 @@ function Suggestions() {
   const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3500/profile")
+    fetch("/data/db.json")
       .then((data) => data.json())
       .then((data) => setProfile(data))
       .catch((err) => console.log(err))
 
-    fetch("http://localhost:3500/suggestions")
+    fetch("/data/db.json")
       .then((data) => data.json())
       .then((data) => setSuggestions(data))
       .catch((err) => console.log(err))
