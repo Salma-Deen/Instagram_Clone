@@ -8,8 +8,8 @@ function Viewstory() {
   const [story, setStory] = useState(null);
   const navigate = useNavigate();
   useEffect(() => {
-    // Correct:
-    fetch(`http://localhost:3500/story/${id}`)
+   
+    fetch(`/data/db.json/story/${id}`)
 
       .then(data => data.json())
       .then(data => setStory(data))
